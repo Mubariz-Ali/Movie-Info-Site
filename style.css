@@ -9,6 +9,7 @@ nav {
   height: 70px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: saddlebrown;
   color: whitesmoke;
   font-style: italic;
@@ -43,6 +44,7 @@ ul {
   background-color: darkslategrey;
   cursor: pointer;
   box-shadow: 0 6px #999;
+  margin-left: 230px;
 }
 #MovieInput button:hover {
   background-color: gray;
@@ -51,4 +53,31 @@ ul {
   background-color: slategrey;
   box-shadow: 0 5px #666;
   transform: translateY(2px);
+}
+
+/* Style for each movie list item */
+.movie-item {
+  list-style: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border: 2px dotted black;
+  padding: 10px;
+}
+
+.poster {
+  max-width: 300px;
+  height: auto;
+  margin-right: 10px;
+}
+.movie-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-title,
+.movie-year {
+  margin: 0;
+  font-size: 30px;
+  font-weight: bold;
 }
